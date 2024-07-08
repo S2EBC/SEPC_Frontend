@@ -1,0 +1,38 @@
+/* find.css */
+
+.find-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.input-container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #64B5F6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #42A5F5;
+}

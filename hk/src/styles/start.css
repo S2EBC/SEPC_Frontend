@@ -1,0 +1,20 @@
+/* start.css */
+
+.start-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: white;
+}
+
+p {
+    font-size: 1.2em;
+    color: white;
+}

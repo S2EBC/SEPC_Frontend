@@ -1,5 +1,5 @@
 import React from 'react';
-import Scanf from './components/scanf';
+import Scanf from './components/scanf'; // Import Scanf from components
 
 function App() {
     return (

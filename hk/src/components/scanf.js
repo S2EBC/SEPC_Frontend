@@ -1,11 +1,33 @@
-import React from 'react';
-import '../styles/scanf.css'; // 올바른 경로로 수정
+import React, { useState } from 'react';
+import Find from './find'; // Import the Find component
+import Health from './health'; // Import the Health component
+import '../styles/scanf.css'; 
 
 const Scanf = () => {
+    const [showFind, setShowFind] = useState(false);
+    const [showHealth, setShowHealth] = useState(false);
+
+    const handleStartClick = () => {
+        setShowFind(true);
+    }
+
+    const handleNextClick = () => {
+        setShowFind(false);
+        setShowHealth(true);
+    }
+
     return (
         <div className="container">
-            <h1>BSSM 키오스크에 오신 것을 환영합니다.</h1>
-            <button>시작하기</button>
+            {showHealth ? (
+                <Health />
+            ) : showFind ? (
+                <Find onNextClick={handleNextClick} />
+            ) : (
+                <>
+                    <h1>BSSM 키오스크에 오신 것을 <br />환영합니다.</h1>
+                    <button onClick={handleStartClick}>시작하기</button>
+                </>
+            )}
         </div>
     );
 }
