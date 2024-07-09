@@ -1,3 +1,4 @@
+//scanf.js
 import React, { useState } from 'react';
 import Find from './find'; // Import the Find component
 import Health from './health'; // Import the Health component

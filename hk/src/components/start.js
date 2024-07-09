@@ -1,3 +1,4 @@
+//start.js
 import React, { useState, useEffect, useRef } from 'react';
 import * as tmPose from '@teachablemachine/pose';
 import '@tensorflow/tfjs';
